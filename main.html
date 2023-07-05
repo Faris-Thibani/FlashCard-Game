@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icons8-memrise-120.png" type="image/x-icon">
+    <title>Spanish-English FlashCards</title>
+</head>
+
+<body class="font-mono flex flex-col justify-between items-center h-screen">
+    <Nav class="bg-blue-100 px-6 pt-6 flex justify-between items-center w-screen">
+        <img src="images/icons8-memrise-100.png" alt="Memrise Logo" class="w-32 h-32">
+        <div class="flex justify-between text-3xl text-blue-900">
+            <a href="#" class="mr-6">About</a>
+            <a href="#" class="mr-6">Contact</a>
+            <a href="#" class="mr-6">FAQ</a>
+            <a href="#" class="mr-6">Reviews</a>
+            <a href="#" class="mr-6">Pricing</a>
+            <a href="#"><img width="45" height="45" src="https://img.icons8.com/3d-fluency/94/crescent-moon.png"
+                    alt="crescent-moon" /></a>
+        </div>
+    </Nav>
+    <main class="bg-blue-100 text-blue-900 flex flex-col justify-between items-center h-1/2 w-1/2">
+        <div class="div h-full w-full flex-col justify-around flex items-center">
+            <h1 id='title' class="uppercase text-3xl black font-black underline">Title</h1>
+            <p id='word' class="text-6xl capitalize">Word</p>
+            <p id='progress' class="text-xl mb-4"></p>
+            <div class="buttons h-3/12 w-full flex justify-center">
+                <input id="answerInput" type="text" placeholder="Enter your answer" class="w-1/2 px-2 py-1 rounded-l-full" />
+                <button id="check" class=" w-1/6 px-4 py-6 bg-yellow-400 text-blue-900 rounded-r-full">Check Answer</button>
+            </div>
+            <div id="progress" class="text-blue-900"></div>
+            <div id="score" class="text-red-500"></div>
+            <div id="mistakes" class="text-red-500"></div>
+    </main>
+    <footer class="w-screen bg-blue-100 text-blue-900 h-12 text-center">
+        Copy Right - Faris Althibani - 2023
+    </footer>
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>
